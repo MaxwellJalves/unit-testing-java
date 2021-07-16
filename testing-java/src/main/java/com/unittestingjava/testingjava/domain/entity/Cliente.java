@@ -14,4 +14,10 @@ public class Cliente {
     private Long id;
     private String nome;
     private String sobreNome;
+
+    public Cliente(Cliente cliente) {
+        this.id = cliente.getId();
+        this.nome = cliente.getNome();
+        this.sobreNome = cliente.getSobreNome();
+    }
 }
