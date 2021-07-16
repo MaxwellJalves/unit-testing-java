@@ -38,7 +38,7 @@ public class ClienteController {
     }
 
     @PostMapping
-    public ResponseEntity<?> save(@RequestBody Cliente cliente){
+    public ResponseEntity<String> save(@RequestBody Cliente cliente){
         boolean retorno = clienteServices.save(cliente);
         String response = retorno==true?"Registro criado com sucesso" : "Erro ao inserir os dados";
         return ResponseEntity.ok(response);

@@ -12,9 +12,9 @@ public class ClienteServices {
 
     public static List<Cliente> cli = new ArrayList<>();
     static {
-        ClienteServices.cli.add(new Cliente(1l,"Maxwell","seiNao"));
-        ClienteServices.cli.add(new Cliente(2l,"Ana","seiNao"));
-        ClienteServices.cli.add(new Cliente(3l,"Bia","seiNao"));
+        ClienteServices.cli.add(new Cliente(1l,"Maxwell","Costa"));
+        ClienteServices.cli.add(new Cliente(2l,"Ana","Beatriz"));
+        ClienteServices.cli.add(new Cliente(3l,"Bia","Guarana"));
     }
 
     public Cliente cadastrar(Long id,String nome,String sobrenome){
