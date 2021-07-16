@@ -41,4 +41,24 @@ public class TestingClienteController {
         .then()
                 .statusCode(HttpStatus.OK.value());
     }
+
+    @Test
+    public void deveRetornarNaoEncontrato_quandoBuscarIdInexiste(){
+        Mockito.when(this.clienteServices.getById(10l))
+                .thenReturn(null);
+    //dado
+        given()
+            .accept(ContentType.JSON)
+        .when()
+            .get("/app/v1/clientes/{id}",10L)
+        .then()
+            .status(HttpStatus.NOT_FOUND);
+    }
+
+    @Test
+    public void deveRetornarBadRequest_quandoForInformadoUmParametroNaoDefinido(){
+     given().accept(ContentType.JSON).when().get("/app/v1/clientes/{id}",-10L).then().status(HttpStatus.BAD_REQUEST);
+     Mockito.verify(this.clienteServices,Mockito.never()).getById(-1L);
+    }
+
 }

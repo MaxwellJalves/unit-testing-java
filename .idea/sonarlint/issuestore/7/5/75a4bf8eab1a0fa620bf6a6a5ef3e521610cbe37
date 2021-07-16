@@ -1,0 +1,5 @@
+
+=
+java:S1125-"'Remove the unnecessary boolean literal.(Ù¬“Þ
+^
+java:S2583#"CChange this condition so that it does not always evaluate to "true"(Âæ¿ýúÿÿÿÿ

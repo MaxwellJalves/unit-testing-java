@@ -43,8 +43,19 @@ public class ClienteServices {
     }
 
     public List<Cliente> getAll() {
-
      return  cli.stream().map(Cliente::new).collect(Collectors.toList());
+    }
 
+    public boolean validaEntrada(String value){
+
+        switch(value){
+            case "-1":
+                return false;
+            case "":
+                return false;
+
+        }
+
+        return true;
     }
 }

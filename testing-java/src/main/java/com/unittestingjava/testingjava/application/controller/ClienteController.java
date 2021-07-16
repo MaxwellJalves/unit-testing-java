@@ -32,8 +32,10 @@ public class ClienteController {
 
         if(c != null){
             return  ResponseEntity.ok().body(c);
-        }else {
+        }else if (c == null){
             return ResponseEntity.notFound().build();
+        }else{
+            return ResponseEntity.badRequest().build();
         }
     }
 

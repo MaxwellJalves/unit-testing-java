@@ -1,0 +1,14 @@
+
+8
+java:S2386"Make this member "protected".(È‹š·ýÿÿÿÿ
+j
+java:S18716"HThis case's code block is the same as the block for the case on line 52.(àä¨©þÿÿÿÿ8‚˜÷þª/
+<	java:S1313""Add a default case to this switch.(Ýõô£ùÿÿÿÿ
+m
+java:S13013"KReplace this "switch" statement by "if" statements to increase readability.(Ýõô£ùÿÿÿÿ8„˜÷þª/
+u
+java:S1488"ZImmediately return this expression instead of assigning it to the temporary variable "c1".(¢øù®úÿÿÿÿ
+j
+java:S1104"OMake cli a static final constant or non-public and provide accessors if needed.(È‹š·ýÿÿÿÿ
+D
+java:S1444")Make this "public static cli" field final(È‹š·ýÿÿÿÿ
